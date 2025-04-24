@@ -1,0 +1,7 @@
+name: Shop
+version: '1.0'
+main: de.thecitycrafter.shop.Main
+api-version: '1.21'
+commands:
+  shop:
+    description: "open Shop"

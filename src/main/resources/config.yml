@@ -1,0 +1,25 @@
+categories:
+  Example:
+    slot: 10
+    icon: minecraft:grass_block
+    items:
+      '0':
+        id: minecraft:diamond
+        price:
+          item: "minecraft:diamond"
+          count: 1
+      '1':
+        id: minecraft:diamond_block
+        price:
+          item: "minecraft:diamond"
+          count: 9
+      '2':
+        id: minecraft:netherite_ingot
+        price:
+          item: "minecraft:diamond"
+          count: 9
+      '3':
+        id: minecraft:netherite_block
+        price:
+          item: "minecraft:diamond"
+          count: 81
