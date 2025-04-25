@@ -1,5 +1,5 @@
 # Commands:
-/shop => opens shop menu
+/shop => opens shop menu<p>
 /shopadmin => configure shop menu
 ## Shop:
 permission: shop.use<p>
