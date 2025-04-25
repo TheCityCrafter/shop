@@ -4,7 +4,12 @@ main: de.thecitycrafter.shop.Main
 api-version: '1.21'
 commands:
   shop:
-    description: "open Shop"
+    description: "opens shop menu"
+    permission: "shop.use"
   shopadmin:
     permission: "shop.admin"
-    description: "admin commands"
+    description: "configure shop menu"
+
+permissions:
+  shop.use:
+    default: true
