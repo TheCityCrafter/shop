@@ -6,4 +6,5 @@ commands:
   shop:
     description: "open Shop"
   shopadmin:
+    permission: "shop.admin"
     description: "admin commands"

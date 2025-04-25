@@ -27,6 +27,9 @@ public class shopItemInventory implements Listener {
             ConfigurationSection categories = configurationSection.getConfigurationSection(key);
             if (key.equals(category)){
                 ConfigurationSection items = categories.getConfigurationSection("items");
+                if (items.getKeys(false).isEmpty()){
+                    return;
+                }
                 int currentSlot = 0;
                 for(String itemKey: items.getKeys(false)){
                     ConfigurationSection item = items.getConfigurationSection(itemKey);
