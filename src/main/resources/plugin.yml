@@ -5,3 +5,5 @@ api-version: '1.21'
 commands:
   shop:
     description: "open Shop"
+  shopadmin:
+    description: "admin commands"

@@ -1,5 +1,6 @@
 package de.thecitycrafter.shop;
 
+import de.thecitycrafter.shop.command.shopAdminCommand;
 import de.thecitycrafter.shop.command.shopCommand;
 import de.thecitycrafter.shop.inventories.shopCategoryInventory;
 import de.thecitycrafter.shop.inventories.shopItemInventory;
@@ -16,6 +17,10 @@ public final class Main extends JavaPlugin {
         this.saveDefaultConfig();
         getCommand("shop").setExecutor(new shopCommand());
         getCommand("shop").setTabCompleter(new shopCommand());
+
+        getCommand("shopadmin").setExecutor(new shopAdminCommand());
+        getCommand("shopadmin").setTabCompleter(new shopAdminCommand());
+
         getServer().getPluginManager().registerEvents(new shopCategoryInventory(), this);
         getServer().getPluginManager().registerEvents(new shopItemInventory(), this);
 

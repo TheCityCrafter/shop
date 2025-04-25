@@ -15,24 +15,6 @@ public class shopCommand implements CommandExecutor, TabCompleter {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String s, String[] args) {
         Player player = (Player) sender;
-        if (args.length == 1 && args[0].equalsIgnoreCase("reload")){
-            Main.getPlugin().reloadConfig();
-            player.sendMessage("Shop reloaded");
-            return true;
-        }
-
-
-//        ConfigurationSection configurationSection = Main.getPluginConfig().getConfigurationSection("categories");
-//
-//        for(String key: configurationSection.getKeys(false)){
-//            ConfigurationSection categories = configurationSection.getConfigurationSection(key);
-//            player.sendMessage("Kategorie: " + key + "\nSlot: " + categories.getInt("slot"));
-//            ConfigurationSection items = categories.getConfigurationSection("items");
-//            for(String itemKey: items.getKeys(false)){
-//                ConfigurationSection item = items.getConfigurationSection(itemKey);
-//                player.sendMessage(" Item: " + item.getString("id") + "\n Slot: " + item.getInt("slot"));
-//            }
-//        }
         shopCategoryInventory.openInventory(player);
         return true;
     }
